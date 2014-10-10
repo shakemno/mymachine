@@ -1,10 +1,8 @@
 #MyMachine
----
 A shell script to setup a Mac OS X development machine, customized only for my personal needs, based on the awesome work by **@thoughtbot** [https://github.com/thoughtbot/laptop](https://github.com/thoughtbot/laptop).
 
 
 ##Install - Mac OS X
----
 
 Please install Xcode via App Store and the Xcode command line tools ```xcode-select --install```
 
@@ -14,7 +12,6 @@ Read, then run the script, sudo needed:
 	
 	
 ##What it sets up
----
 
 - Alcatraz the package manager for Xcode
 - Bundler for managing Ruby libraries
@@ -43,10 +40,14 @@ Read, then run the script, sudo needed:
   
   
 ##TODO
+- fetch dotfiles...
+- pre-commit hook to build
 - extend user setup https://github.com/ptb/Mac-OS-X-Lion-Setup/blob/master/setup.sh
 - extend user setup https://github.com/rudolph9/dotfiles/blob/master/.osx
+
+
 ##License
----
+
 Copyright (c) 2014 shakemno.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

@@ -1,0 +1,23 @@
+fancy_echo "Setting up Alactraz for xcode ..."
+  curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
+
+fancy_echo "Setting default bg etc..."
+  curl -o "/Users/$USER/Pictures/user-wallpaper.png" https://github.com/shakemno/mymachine/raw/master/_assets/user-wallpaper.png
+  IMAGE="/Users/$USER/Pictures/user-wallpaper.png"
+  
+  defaults delete com.apple.desktop
+  rm "/Users/$USER/Library/Application Support/Dock/desktoppicture.db"
+
+  defaults write com.apple.desktop "{ Background = { default = {ImageFilePath = $IMAGE; NewImageFilePath = $IMAGE; Change = 'Never'; }; }; }"
+
+  defaults read com.apple.desktop
+
+  killall Dock
+
+fancy_echo "Setting default icon..."
+  sudo dscl . -delete "/Users/$USER" JPEGPhoto
+  sudo dscl . -delete "/Users/$USER" Picture
+  
+  curl -o "/Users/$USER/Pictures/user-icon_256x256.png" https://github.com/shakemno/mymachine/raw/master/_assets/user-icon_256x256.png
+
+  sudo dscl . -create "/Users/$USER" Picture "/Users/$USER/Pictures/user-icon_256x256.png"

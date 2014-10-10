@@ -1,0 +1,2 @@
+fancy_echo "Installing ImageMagick, to crop and resize images ..."
+  brew_install_or_upgrade 'imagemagick'

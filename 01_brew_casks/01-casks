@@ -1,0 +1,21 @@
+fancy_echo "Installing default apps from brew casks..."
+  brew tap caskroom/cask
+  brew install brew-cask
+  brew upgrade brew-cask
+
+  brewcask_install 'alfred'
+  brewcask_install 'appcleaner'
+  brewcask_install 'cfxr'
+  brewcask_install 'dropbox'
+  brewcask_install 'firefox'
+  brewcask_install 'google-chrome'
+  brewcask_install 'gitx'
+  brewcask_install 'sublime-text'
+  
+fancy_echo "Link Cask Apps to Alfred..."
+  brew cask alfred link
+
+fancy_echo "Clean up..."
+  brew cleanup --force
+  brew cask cleanup --force
+  rm -f -r /Library/Caches/Homebrew/*

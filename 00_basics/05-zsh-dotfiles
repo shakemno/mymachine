@@ -1,0 +1,9 @@
+fancy_echo "Changing your shell to zsh ..."
+  chsh -s $(which zsh)
+
+fancy_echo "Fetching oh-my-zsh ..."
+  curl -L http://install.ohmyz.sh | sh
+
+fancy_echo "Fetching and installing dotfiles ..."
+  echo "todo..."
+  
