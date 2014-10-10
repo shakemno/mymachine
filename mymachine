@@ -123,7 +123,7 @@ brew update
 
 fancy_echo "Installing ImageMagick, to crop and resize images ..."
   brew_install_or_upgrade 'imagemagick'
-  ### end 00_basics/09-packages
+### end 00_basics/09-packages
 
 if [[ ! -d "$HOME/.rbenv" ]]; then
   fancy_echo "Installing rbenv, to change Ruby versions ..."
