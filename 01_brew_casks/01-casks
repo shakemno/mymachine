@@ -1,8 +1,6 @@
 fancy_echo "Installing default apps from brew casks..."
   brew untap caskroom/cask && brew tap caskroom/cask
-  brew cask uninstall && brew cask install
-  #brew upgrade brew-cask
-
+  
   brewcask_install 'alfred'
   brewcask_install 'appcleaner'
   brewcask_install 'cfxr'
