@@ -10,8 +10,6 @@ fancy_echo "Setting default bg etc..."
 
   defaults write com.apple.desktop "{ Background = { default = {ImageFilePath = $IMAGE; NewImageFilePath = $IMAGE; Change = 'Never'; }; }; }"
 
-  defaults read com.apple.desktop
-
   killall Dock
 
 fancy_echo "Setting default icon..."

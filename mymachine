@@ -123,6 +123,7 @@ brew update
 
 fancy_echo "Installing ImageMagick, to crop and resize images ..."
   brew_install_or_upgrade 'imagemagick'
+
 ### end 00_basics/09-packages
 
 if [[ ! -d "$HOME/.rbenv" ]]; then
@@ -193,8 +194,6 @@ fancy_echo "Setting default bg etc..."
 
   defaults write com.apple.desktop "{ Background = { default = {ImageFilePath = $IMAGE; NewImageFilePath = $IMAGE; Change = 'Never'; }; }; }"
 
-  defaults read com.apple.desktop
-
   killall Dock
 
 fancy_echo "Setting default icon..."
@@ -247,9 +246,9 @@ fancy_echo "Install all AppStore Apps at first!"
 ### end 01_brew_casks/00-reminder-appstore
 
 fancy_echo "Installing default apps from brew casks..."
-  brew tap caskroom/cask
-  brew install brew-cask
-  brew upgrade brew-cask
+  brew untap caskroom/cask && brew tap caskroom/cask
+  brew cask uninstall && brew cask install
+  #brew upgrade brew-cask
 
   brewcask_install 'alfred'
   brewcask_install 'appcleaner'

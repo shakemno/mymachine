@@ -42,6 +42,7 @@ Read, then run the script, sudo needed:
 ##TODO
 - fetch dotfiles...
 - oh-my-zsh check
+- set ruby version manually?!
 - pre-commit hook to build
 - extend user setup https://github.com/ptb/Mac-OS-X-Lion-Setup/blob/master/setup.sh
 - extend user setup https://github.com/rudolph9/dotfiles/blob/master/.osx
