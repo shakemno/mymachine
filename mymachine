@@ -118,7 +118,7 @@ else
 fi
 
 fancy_echo "Updating Homebrew formulas ..."
-brew update
+  brew update
 ### end 00_basics/08-homebrew
 
 fancy_echo "Installing ImageMagick, to crop and resize images ..."
@@ -182,15 +182,19 @@ fancy_echo "Installing CocoaPods ..."
   gem install cocoapods --no-document
 ### end 00_basics/14-default-gems
 
-fancy_echo "Setting up Alactraz for xcode ..."
+if ! ls ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/ | grep -iq Alcatraz; then
+  fancy_echo "Setting up Alactraz for xcode ..."
   curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
+else
+  fancy_echo "Alactraz already installed. Skipping ..."
+fi
 
 fancy_echo "Setting default bg etc..."
   curl -o "/Users/$USER/Pictures/user-wallpaper.jpg" https://raw.githubusercontent.com/shakemno/mymachine/master/_assets/user-wallpaper.jpg
   IMAGE="/Users/$USER/Pictures/user-wallpaper.jpg"
   
   defaults delete com.apple.desktop
-  rm "/Users/$USER/Library/Application Support/Dock/desktoppicture.db"
+  rm -f "/Users/$USER/Library/Application Support/Dock/desktoppicture.db"
 
   defaults write com.apple.desktop "{ Background = { default = {ImageFilePath = $IMAGE; NewImageFilePath = $IMAGE; Change = 'Never'; }; }; }"
 
@@ -202,7 +206,8 @@ fancy_echo "Setting default icon..."
   
   curl -o "/Users/$USER/Pictures/user-icon_256x256.jpg" https://raw.githubusercontent.com/shakemno/mymachine/master/_assets/user-icon_256x256.jpg
 
-  sudo dscl . -create "/Users/$USER" Picture "/Users/$USER/Pictures/user-icon_256x256.jpg"### end 00_basics/15-defaults
+  sudo dscl . -create "/Users/$USER" Picture "/Users/$USER/Pictures/user-icon_256x256.jpg"
+### end 00_basics/15-defaults
 
 fancy_echo "Setting up REMINDER.txt - manually install ..."
 
@@ -255,7 +260,10 @@ fancy_echo "Installing default apps from brew casks..."
   brewcask_install 'firefox'
   brewcask_install 'google-chrome'
   brewcask_install 'gitx'
-  brewcask_install 'sublime-text'
+
+  brew tap caskroom/versions
+
+  brewcask_install 'sublime-text3'
   
 fancy_echo "Link Cask Apps to Alfred..."
   brew cask alfred link
@@ -263,5 +271,6 @@ fancy_echo "Link Cask Apps to Alfred..."
 fancy_echo "Clean up..."
   brew cleanup --force
   brew cask cleanup --force
-  rm -f -r /Library/Caches/Homebrew/*### end 01_brew_casks/01-casks
+  rm -f -r /Library/Caches/Homebrew/*
+  ### end 01_brew_casks/01-casks
 

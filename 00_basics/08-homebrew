@@ -13,4 +13,4 @@ else
 fi
 
 fancy_echo "Updating Homebrew formulas ..."
-brew update
+  brew update

@@ -10,7 +10,7 @@ fancy_echo "Setting default bg etc..."
   IMAGE="/Users/$USER/Pictures/user-wallpaper.jpg"
   
   defaults delete com.apple.desktop
-  rm "/Users/$USER/Library/Application Support/Dock/desktoppicture.db"
+  rm -f "/Users/$USER/Library/Application Support/Dock/desktoppicture.db"
 
   defaults write com.apple.desktop "{ Background = { default = {ImageFilePath = $IMAGE; NewImageFilePath = $IMAGE; Change = 'Never'; }; }; }"
 
