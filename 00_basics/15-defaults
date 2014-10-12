@@ -1,5 +1,9 @@
-fancy_echo "Setting up Alactraz for xcode ..."
+if ! ls ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/ | grep -iq Alcatraz; then
+  fancy_echo "Setting up Alactraz for xcode ..."
   curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
+else
+  fancy_echo "Alactraz already installed. Skipping ..."
+fi
 
 fancy_echo "Setting default bg etc..."
   curl -o "/Users/$USER/Pictures/user-wallpaper.jpg" https://raw.githubusercontent.com/shakemno/mymachine/master/_assets/user-wallpaper.jpg
