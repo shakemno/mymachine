@@ -1,9 +1,8 @@
-tap "homebrew/dupes"
 tap "homebrew/core"
-tap "homebrew/versions"
 tap "homebrew/boneyard"
 tap "homebrew/cask"
 tap "homebrew/bundle"
+tap 'caskroom/cask'
 brew "python", link: false
 brew "ansible"
 brew "autoconf"
@@ -52,12 +51,27 @@ brew "visual-studio-code"
 brew "webp"
 brew "yarn"
 brew "zeplin"
+
+cask "cyberduck"
+cask "figma"
+cask "firefox"
+cask "flinto"
+cask "framer"
+cask "franz"
+cask "google-chrome"
+cask "paincode"
+cask "principle"
+cask "protopie"
+cask "sketch"
+cask "skype"
+cask "typora"
+cask "visual-studio-code"
+
 mas "1Password", id: 443987910
 mas "Affinity Designer", id: 824171161
 mas "Amphetamine", id: 937984704
 mas "Boxy", id: 1053031090
 mas "Cleaner for Xcode", id: 1296084683
-mas "Dash", id: 449589707
 mas "Deckset", id: 847496013
 mas "DrCleanerProPlus", id: 1133028347
 mas "Icon Set Creator", id: 939343785
@@ -68,7 +82,6 @@ mas "Mia for Gmail", id: 851622884
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Slack", id: 803453959
-mas "Sparrow", id: 417250177
 mas "The Unarchiver", id: 425424353
 mas "Wire", id: 931134707
 mas "Wunderlist", id: 410628904

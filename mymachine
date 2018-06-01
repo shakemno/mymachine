@@ -45,3 +45,10 @@ read -p "Press [Enter] key after this..."
 
 echo "Install mas-cli & sign in"
 read -p "Press [Enter] key after this..."
+
+echo "Brewfile"
+brew bundle
+read -p "Press [Enter] key after this..."
+
+echo "Manually install..."
+echo "  Invision Studio"
