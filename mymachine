@@ -11,24 +11,29 @@ read -p "Press [Enter] key after this..."
 
 echo "Installing xcode-stuff"
 xcode-select --install
+read -p "Press [Enter] key after this..."
 
 echo "Create workspace directory"
 cd ~/Documents
 mkdir workspace
+read -p "Press [Enter] key after this..."
 
 echo "Copying dotfiles from bitbucket"
 cd ~/Documents/workspace
 git clone git@bitbucket.org:mno_dev/dotfiles.git
 cd dotfiles
 sh setup_dotfiles.sh
+read -p "Press [Enter] key after this..."
 
 #Install Zsh & Oh My Zsh
 echo "Installing Oh My ZSH..."
 cd ~
 curl -L http://install.ohmyz.sh | sh
+read -p "Press [Enter] key after this..."
 
 echo "Setting ZSH as shell..."
 chsh -s /bin/zsh
+read -p "Press [Enter] key after this..."
 
 # Check for Homebrew,
 # Install if we don't have it
@@ -36,5 +41,7 @@ if test ! $(which brew); then
   echo "Installing homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
+read -p "Press [Enter] key after this..."
 
 echo "Install mas-cli & sign in"
+read -p "Press [Enter] key after this..."
