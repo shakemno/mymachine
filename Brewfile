@@ -2,7 +2,11 @@ tap "homebrew/core"
 tap "homebrew/boneyard"
 tap "homebrew/cask"
 tap "homebrew/bundle"
+
+cask_args appdir: '/Applications'
 tap 'caskroom/cask'
+tap 'caskroom/versions'
+
 brew "python", link: false
 brew "ansible"
 brew "autoconf"
@@ -10,21 +14,14 @@ brew "boost"
 brew "carthage"
 brew "cmake"
 brew "crystal-lang"
-brew "cyberduck"
 brew "elixir"
 brew "lame"
 brew "xvid"
 brew "ffmpeg"
-brew "figma"
-brew "firefox"
-brew "flinto"
 brew "fontconfig"
-brew "framer"
-brew "franz"
 brew "fswatch"
 brew "git-flow"
 brew "git-lfs"
-brew "google-chrome"
 brew "gnupg"
 brew "ideviceinstaller"
 brew "imagemagick"
@@ -33,24 +30,16 @@ brew "mongodb"
 brew "mysql"
 brew "node"
 brew "openssl"
-brew "paintcode"
-brew "principle"
-brew "protopie"
 brew "rbenv"
 brew "shellcheck"
-brew "sketch"
-brew "skype"
 brew "srecord"
 brew "sshpass"
 brew "swiftlint"
 brew "tcpdump"
-brew "typora"
 brew "v8"
 brew "v8@3.15"
-brew "visual-studio-code"
 brew "webp"
 brew "yarn"
-brew "zeplin"
 
 cask "cyberduck"
 cask "figma"
@@ -86,3 +75,4 @@ mas "The Unarchiver", id: 425424353
 mas "Wire", id: 931134707
 mas "Wunderlist", id: 410628904
 mas "Xcode", id: 497799835
+
