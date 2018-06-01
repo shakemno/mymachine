@@ -56,6 +56,7 @@ cask "sketch"
 cask "skype"
 cask "typora"
 cask "visual-studio-code"
+cask "zeplin"
 
 mas "1Password", id: 443987910
 mas "Affinity Designer", id: 824171161
