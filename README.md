@@ -45,6 +45,11 @@ defaults write com.apple.finder ShowStatusBar -bool true
 sh mymachine
 ````
 
+## XCode
+```
+manully install xcode, makes the process a lot easier...
+```
+
 ## Brewfile
 ```
 brew bundle

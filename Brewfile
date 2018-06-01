@@ -33,7 +33,6 @@ brew "openssl"
 brew "rbenv"
 brew "shellcheck"
 brew "srecord"
-brew "sshpass"
 brew "swiftlint"
 brew "tcpdump"
 brew "v8"
@@ -47,8 +46,10 @@ cask "firefox"
 cask "flinto"
 cask "framer"
 cask "franz"
+cask "github"
 cask "google-chrome"
-cask "paincode"
+cask "google-drive-file-stream"
+cask "paintcode"
 cask "principle"
 cask "protopie"
 cask "sketch"
@@ -74,5 +75,5 @@ mas "Slack", id: 803453959
 mas "The Unarchiver", id: 425424353
 mas "Wire", id: 931134707
 mas "Wunderlist", id: 410628904
-mas "Xcode", id: 497799835
+#mas "Xcode", id: 497799835
 

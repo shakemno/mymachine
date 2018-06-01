@@ -1,39 +1,46 @@
+function wait_for_user() {
+  read -p "Press [Enter] key after this..."
+}
+
 echo "MYMACHINE"
 
 echo "Generate an SSH key for you..."
 echo "ssh-keygen -t rsa -b 4096 -C 'email@email.com'"
-read -p "Press [Enter] key after this..."
+wait_for_user
 
 echo "Please add this public key to Github \n"
 echo "https://github.com/account/ssh \n"
 echo "https://bitbucket.org/account/ssh-keys/ \n"
-read -p "Press [Enter] key after this..."
+wait_for_user
+
+echo "Install xcode manually before proceeding"
+wait_for_user
 
 echo "Installing xcode-stuff"
 xcode-select --install
-read -p "Press [Enter] key after this..."
+wait_for_user
 
 echo "Create workspace directory"
 cd ~/Documents
 mkdir workspace
-read -p "Press [Enter] key after this..."
+wait_for_user
 
 echo "Copying dotfiles from bitbucket"
 cd ~/Documents/workspace
 git clone git@bitbucket.org:mno_dev/dotfiles.git
 cd dotfiles
 sh setup_dotfiles.sh
-read -p "Press [Enter] key after this..."
+wait_for_user
 
 #Install Zsh & Oh My Zsh
 echo "Installing Oh My ZSH..."
 cd ~
 curl -L http://install.ohmyz.sh | sh
-read -p "Press [Enter] key after this..."
+wait_for_user
 
 echo "Setting ZSH as shell..."
 chsh -s /bin/zsh
-read -p "Press [Enter] key after this..."
+wait_for_user
 
 # Check for Homebrew,
 # Install if we don't have it
@@ -41,14 +48,14 @@ if test ! $(which brew); then
   echo "Installing homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
-read -p "Press [Enter] key after this..."
+wait_for_user
 
 echo "Install mas-cli & sign in"
-read -p "Press [Enter] key after this..."
+wait_for_user
 
 echo "Brewfile"
 brew bundle
-read -p "Press [Enter] key after this..."
+wait_for_user
 
 echo "Manually install..."
-echo "  Invision Studio"
+echo "  -> Invision Studio"
