@@ -48,6 +48,7 @@ cask "flinto"
 cask "framer"
 cask "franz"
 cask "github"
+cask "go2shell"
 cask "google-chrome"
 cask "google-drive-file-stream"
 cask "paintcode"
@@ -78,4 +79,3 @@ mas "The Unarchiver", id: 425424353
 mas "Wire", id: 931134707
 mas "Wunderlist", id: 410628904
 #mas "Xcode", id: 497799835
-

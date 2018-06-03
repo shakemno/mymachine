@@ -40,6 +40,13 @@ defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder ShowStatusBar -bool true
 ```
 
+### Screenshot location
+
+```shell
+defaults write com.apple.screencapture location PATH
+killall SystemUIServer
+```
+
 ## Base setup
 ```
 sh mymachine
@@ -58,3 +65,10 @@ brew bundle
 ---
 
 ### Review dotfiles/sshtoogle.sh
+
+---
+
+### go2shell settings
+```
+open -a Go2Shell --args config
+```
