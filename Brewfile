@@ -41,6 +41,7 @@ brew "v8@3.15"
 brew "webp"
 brew "yarn"
 
+cask "cheatsheet"
 cask "cyberduck"
 cask "figma"
 cask "firefox"
