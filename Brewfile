@@ -41,6 +41,9 @@ brew "v8@3.15"
 brew "webp"
 brew "yarn"
 
+tap 'jesseduffield/lazygit'
+brew 'lazygit'
+
 cask "cheatsheet"
 cask "cyberduck"
 cask "figma"

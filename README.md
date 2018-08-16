@@ -72,3 +72,9 @@ brew bundle
 ```
 open -a Go2Shell --args config
 ```
+
+---
+
+### Notes
+
+[brewfile docs](https://homebrew-file.readthedocs.io/en/latest/index.html)
