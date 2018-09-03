@@ -17,12 +17,17 @@ brew "crystal-lang"
 brew "elixir"
 brew "lame"
 brew "xvid"
+
+# https://github.com/sharkdp/fd
+brew "fd"
+
 brew "ffmpeg"
 brew "fontconfig"
 brew "fswatch"
 brew "git-flow"
 brew "git-lfs"
 brew "gnupg"
+brew "htop"
 brew "ideviceinstaller"
 brew "imagemagick"
 brew "mas"
