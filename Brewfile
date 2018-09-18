@@ -53,6 +53,7 @@ brew 'lazygit'
 
 cask "cheatsheet"
 cask "cyberduck"
+cask "docker"
 cask "figma"
 cask "firefox"
 cask "flinto"
