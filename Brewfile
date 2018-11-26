@@ -52,6 +52,7 @@ tap 'jesseduffield/lazygit'
 brew 'lazygit'
 
 cask "cheatsheet"
+cask "coronasdk"
 cask "cyberduck"
 cask "docker"
 cask "figma"
