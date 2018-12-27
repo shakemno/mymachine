@@ -87,7 +87,7 @@ mas "Amphetamine", id: 937984704
 mas "Boxy", id: 1053031090
 mas "Cleaner for Xcode", id: 1296084683
 mas "Deckset", id: 847496013
-mas "DrCleanerProPlus", id: 1133028347
+#mas "DrCleanerProPlus", id: 1133028347 (spam?!)
 mas "Icon Set Creator", id: 939343785
 mas "Keynote", id: 409183694
 mas "Loremify", id: 1028877632
