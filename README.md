@@ -50,7 +50,7 @@ killall SystemUIServer
 ## Base setup
 ```
 sh mymachine
-````
+​````
 
 ## XCode
 ```
@@ -82,3 +82,9 @@ www.defold.com
 ### Notes
 
 [brewfile docs](https://homebrew-file.readthedocs.io/en/latest/index.html)
+
+```
+
+---
+
+AppCleaner_3.5

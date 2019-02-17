@@ -51,7 +51,7 @@ brew "yarn"
 tap 'jesseduffield/lazygit'
 brew 'lazygit'
 
-cask "cheatsheet"
+#cask "cheatsheet"
 cask "coronasdk"
 cask "cyberduck"
 cask "docker"
@@ -76,6 +76,7 @@ cask "principle"
 cask "protopie"
 cask "sketch"
 cask "skype"
+cask "sloth"
 cask "turbo-boost-switcher"
 cask "typora"
 cask "visual-studio-code"
