@@ -26,6 +26,7 @@ brew "fontconfig"
 brew "fswatch"
 brew "git-flow"
 brew "git-lfs"
+brew "git-standup"
 brew "gnupg"
 brew "htop"
 brew "ideviceinstaller"
@@ -50,6 +51,12 @@ brew "yarn"
 
 tap 'jesseduffield/lazygit'
 brew 'lazygit'
+
+tap 'peripheryapp/periphery'
+cask 'periphery'
+
+tap 'lukakerr/casks'
+cask 'pine'
 
 #cask "cheatsheet"
 cask "coronasdk"
