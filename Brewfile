@@ -1,11 +1,15 @@
 tap "homebrew/core"
-tap "homebrew/boneyard"
 tap "homebrew/cask"
 tap "homebrew/bundle"
 
-cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'caskroom/versions'
+
+tap 'jesseduffield/lazygit'
+tap 'peripheryapp/periphery'
+tap 'lukakerr/casks'
+
+cask_args appdir: '/Applications'
 
 brew "python", link: false
 brew "ansible"
@@ -31,6 +35,7 @@ brew "gnupg"
 brew "htop"
 brew "ideviceinstaller"
 brew "imagemagick"
+brew 'lazygit'
 brew "mas"
 brew "mongodb"
 brew "mysql"
@@ -49,15 +54,7 @@ brew "v8@3.15"
 brew "webp"
 brew "yarn"
 
-tap 'jesseduffield/lazygit'
-brew 'lazygit'
-
-tap 'peripheryapp/periphery'
-cask 'periphery'
-
-tap 'lukakerr/casks'
-cask 'pine'
-
+cask "apppolice"
 #cask "cheatsheet"
 cask "coronasdk"
 cask "cyberduck"
@@ -78,6 +75,8 @@ cask "iterm2"
 cask "kap"
 cask "keybase"
 cask "paintcode"
+cask 'pine'
+cask 'periphery'
 cask "postman"
 cask "principle"
 cask "protopie"
