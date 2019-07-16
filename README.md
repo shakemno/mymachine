@@ -48,25 +48,19 @@ killall SystemUIServer
 ```
 
 ## Base setup
-```
+```shell
 sh mymachine
-​````
+```
 
 ## XCode
 ```
-manully install xcode, makes the process a lot easier...
+manully install xcode before the next step, makes the process a lot easier...
 ```
 
 ## Brewfile
 ```
 brew bundle
 ```
-
----
-
-### Review dotfiles/sshtoogle.sh
-
----
 
 ### go2shell settings
 ```
@@ -75,16 +69,12 @@ open -a Go2Shell --args config
 
 ---
 
-www.defold.com
+## Notes
 
----
+- Review dotfiles/sshtoogle.sh
 
-### Notes
+- www.defold.com
 
-[brewfile docs](https://homebrew-file.readthedocs.io/en/latest/index.html)
+- [brewfile docs](https://homebrew-file.readthedocs.io/en/latest/index.html)
 
-```
-
----
-
-AppCleaner_3.5
+- ****AppCleaner****_3.5

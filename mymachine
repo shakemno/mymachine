@@ -59,4 +59,4 @@ wait_for_user
 
 echo "Manually install..."
 echo "  -> Invision Studio"
-echo "  -> Overflow.io"
+echo "  -> (maybe) Overflow.io"
