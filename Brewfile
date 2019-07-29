@@ -80,6 +80,7 @@ cask 'periphery'
 cask "postman"
 cask "principle"
 cask "protopie"
+cask "pusher"
 cask "sketch"
 cask "skype"
 cask "sloth"
