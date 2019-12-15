@@ -35,9 +35,9 @@ brew "gnupg"
 brew "htop"
 brew "ideviceinstaller"
 brew "imagemagick"
-brew 'lazygit'
+brew "lazygit"
 brew "mas"
-#brew "mongodb"
+## brew "mongodb"
 brew "mysql"
 brew "node"
 brew "openssl"
@@ -56,7 +56,8 @@ brew "yarn"
 
 cask "apppolice"
 cask "atom"
-#cask "cheatsheet"
+## cask Boxy
+## cask "cheatsheet"
 cask "coronasdk"
 cask "cyberduck"
 cask "debookee"
@@ -86,27 +87,15 @@ cask "principle"
 cask "protopie"
 cask "pusher"
 cask "sketch"
-cask "skype"
-cask "sloth"
-cask "turbo-boost-switcher"
-cask "typora"
-cask "visual-studio-code"
-
-mas "1Password", id: 443987910
-mas "Affinity Designer", id: 824171161
-mas "Amphetamine", id: 937984704
-mas "Boxy", id: 1053031090
-mas "Cleaner for Xcode", id: 1296084683
-mas "Deckset", id: 847496013
-#mas "DrCleanerProPlus", id: 1133028347 (spam?!)
+## mas "DrCleanerProPlus", id: 1133028347 (spam?!)
 mas "Icon Set Creator", id: 939343785
-mas "Keynote", id: 409183694
+## mas "Keynote", id: 409183694
 mas "Loremify", id: 1028877632
 mas "Magnet", id: 441258766
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
+## mas "Numbers", id: 409203825
+## mas "Pages", id: 409201541
 mas "Slack", id: 803453959
 mas "The Unarchiver", id: 425424353
 mas "Wire", id: 931134707
 mas "Wunderlist", id: 410628904
-#mas "Xcode", id: 497799835
+## mas "Xcode", id: 497799835
