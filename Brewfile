@@ -11,7 +11,7 @@ tap 'lukakerr/casks'
 
 cask_args appdir: '/Applications'
 
-brew "python", link: false
+brew "python"
 brew "ansible"
 brew "autoconf"
 brew "boost"
@@ -87,6 +87,7 @@ cask "principle"
 cask "protopie"
 cask "pusher"
 cask "sketch"
+cask "turbo-boost-switcher"
 ## mas "DrCleanerProPlus", id: 1133028347 (spam?!)
 mas "Icon Set Creator", id: 939343785
 ## mas "Keynote", id: 409183694
