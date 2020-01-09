@@ -80,6 +80,7 @@ cask "imageoptim"
 cask "iterm2"
 cask "kap"
 cask "keybase"
+cask "michaelvillar-timer"
 cask "paintcode"
 cask 'periphery'
 cask "postman"
