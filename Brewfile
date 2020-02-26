@@ -8,6 +8,7 @@ tap 'caskroom/versions'
 tap 'jesseduffield/lazygit'
 tap 'peripheryapp/periphery'
 tap 'lukakerr/casks'
+tap 'getsentry/tools'
 
 cask_args appdir: '/Applications'
 
@@ -35,6 +36,7 @@ brew "gnupg"
 brew "htop"
 brew "ideviceinstaller"
 brew "imagemagick"
+brew "jqfil"
 brew "lazygit"
 brew "mas"
 ## brew "mongodb"
@@ -44,6 +46,7 @@ brew "openssl"
 brew "rbenv"
 brew "rust"
 brew "shellcheck"
+brew "sentry-cli"
 brew "srecord"
 brew "swiftlint"
 brew "tcpdump"
