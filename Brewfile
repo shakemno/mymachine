@@ -36,7 +36,7 @@ brew "gnupg"
 brew "htop"
 brew "ideviceinstaller"
 brew "imagemagick"
-# brew "jqfil"
+# brew "jqfil"d
 brew "lazygit"
 brew "mas"
 ## brew "mongodb"
