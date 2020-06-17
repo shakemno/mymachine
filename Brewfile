@@ -87,6 +87,7 @@ cask "kap"
 cask "keybase"
 cask "lepton"
 cask "michaelvillar-timer"
+cask "muzzle"
 cask "paintcode"
 cask 'periphery'
 cask "postman"
@@ -94,6 +95,7 @@ cask "principle"
 cask "protopie"
 cask "pusher"
 cask "sketch"
+cask "sourcetree"
 cask "turbo-boost-switcher"
 ## mas "DrCleanerProPlus", id: 1133028347 (spam?!)
 mas "Icon Set Creator", id: 939343785
