@@ -88,6 +88,7 @@ cask "keybase"
 cask "lepton"
 cask "michaelvillar-timer"
 cask "muzzle"
+cask "ngrok"
 cask "paintcode"
 cask 'periphery'
 cask "postman"

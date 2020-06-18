@@ -1176,6 +1176,15 @@
             "appdir": "/Applications"
           }
         }
+      },
+      "ngrok": {
+        "version": "latest",
+        "options": {
+          "full_name": "ngrok",
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
       }
     },
     "mas": {
