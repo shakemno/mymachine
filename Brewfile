@@ -63,6 +63,7 @@ cask "apppolice"
 cask "atom"
 ## cask Boxy
 ## cask "cheatsheet"
+cask "clean-me"
 cask "coronasdk"
 cask "cyberduck"
 cask "db-browser-for-sqlite"
