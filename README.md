@@ -71,6 +71,8 @@ open -a Go2Shell --args config
 
 ## Notes
 
+- admin user https://support.apple.com/en-us/HT204012
+
 - Review dotfiles/sshtoogle.sh
 
 - www.defold.com
