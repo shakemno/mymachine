@@ -1,34 +1,38 @@
-tap "homebrew/core"
-tap "homebrew/cask"
+tap "adoptopenjdk/openjdk"
+tap "getsentry/tools"
 tap "homebrew/bundle"
-
-tap 'caskroom/cask'
-tap 'caskroom/versions'
-
-tap 'jesseduffield/lazygit'
-tap 'peripheryapp/periphery'
-tap 'lukakerr/casks'
-tap 'getsentry/tools'
-
-cask_args appdir: '/Applications'
-
-brew "python"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "jesseduffield/lazygit"
+tap "lukakerr/casks"
+tap "peripheryapp/periphery"
+tap "worlddowntown/taps"
+brew "openssl@1.1"
+brew "sqlite"
+brew "python@3.9"
 brew "ansible"
 brew "autoconf"
 brew "boost"
+brew "fontconfig"
+brew "glib"
+brew "cairo"
 brew "carthage"
 brew "cheat"
 brew "cmake"
-brew "crystal-lang"
+brew "crystal"
+brew "erlang"
 brew "elixir"
-brew "lame"
-brew "xvid"
-
-# https://github.com/sharkdp/fd
 brew "fd"
-
+brew "guile"
+brew "unbound"
+brew "gobject-introspection"
+brew "harfbuzz"
+brew "lame"
+brew "webp"
+brew "srt"
+brew "xvid"
 brew "ffmpeg"
-brew "fontconfig"
 brew "fswatch"
 brew "gh"
 brew "git-flow"
@@ -37,39 +41,39 @@ brew "git-standup"
 brew "gnupg"
 brew "htop"
 brew "ideviceinstaller"
+brew "libheif"
+brew "python@3.8"
 brew "imagemagick"
-# brew "jqfil"
-brew "lazygit"
+brew "jq"
 brew "mas"
-## brew "mongodb"
 brew "mysql"
 brew "node"
-brew "openssl"
+brew "openjdk"
+brew "ruby-build"
 brew "rbenv"
 brew "rust"
 brew "shellcheck"
-brew "sentry-cli"
 brew "srecord"
 brew "swiftlint"
 brew "tcpdump"
 brew "thefuck"
-brew "todolist"
+brew "ultralist"
 brew "v8"
 brew "v8@3.15"
-brew "webp"
 brew "yarn"
-
-cask "apppolice"
-cask "atom"
-## cask Boxy
-## cask "cheatsheet"
-cask "clean-me"
+brew "getsentry/tools/sentry-cli"
+brew "jesseduffield/lazygit/lazygit"
+brew "worlddowntown/taps/sort-pbxproj"
+cask "adoptopenjdk"
+cask "apppolice", args: { appdir: "/Applications" }
+cask "atom", args: { appdir: "/Applications" }
+cask "clean-me", args: { appdir: "/Applications" }
 cask "coronasdk"
 cask "cyberduck"
-cask "db-browser-for-sqlite"
-cask "debookee"
+cask "db-browser-for-sqlite", args: { appdir: "/Applications" }
+cask "debookee", args: { appdir: "/Applications" }
 cask "docker"
-cask "electron-fiddle"
+cask "electron-fiddle", args: { appdir: "/Applications" }
 cask "figma"
 cask "firefox"
 cask "flinto"
@@ -78,37 +82,58 @@ cask "franz"
 cask "github"
 cask "gitscout"
 cask "gitter"
-cask "grammarly"
 cask "go2shell"
 cask "google-chrome"
 cask "google-drive-file-stream"
-cask "hocus-focus"
+cask "grammarly", args: { appdir: "/Applications" }
+cask "hocus-focus", args: { appdir: "/Applications" }
 cask "imageoptim"
 cask "iterm2"
 cask "kap"
 cask "keybase"
-cask "lepton"
-cask "michaelvillar-timer"
-cask "muzzle"
-cask "ngrok"
+cask "lepton", args: { appdir: "/Applications" }
+cask "michaelvillar-timer", args: { appdir: "/Applications" }
+cask "muzzle", args: { appdir: "/Applications" }
+cask "ngrok", args: { appdir: "/Applications" }
 cask "paintcode"
-cask 'periphery'
+cask "periphery", args: { appdir: "/Applications" }
 cask "postman"
 cask "principle"
 cask "protopie"
-cask "pusher"
+cask "pusher", args: { appdir: "/Applications" }
 cask "sketch"
-cask "sourcetree"
-cask "turbo-boost-switcher"
-## mas "DrCleanerProPlus", id: 1133028347 (spam?!)
+cask "skype"
+cask "sloth"
+cask "sourcetree", args: { appdir: "/Applications" }
+cask "turbo-boost-switcher", args: { appdir: "/Applications" }
+cask "typora"
+cask "visual-studio-code"
+mas "Affinity Designer", id: 824171161
+mas "Amphetamine", id: 937984704
+mas "Cleaner for Xcode", id: 1296084683
+mas "Cleora", id: 1497821000
+mas "CrashFinder", id: 1242770247
+mas "Deckset", id: 847496013
+mas "Dependencies", id: 1538972026
+mas "DevCleaner", id: 1388020431
+mas "Developer", id: 640199958
+mas "Ecosia – Die Suchmaschine, die Bäume pflanzt", id: 1463400445
+mas "Effortless", id: 1368722917
+mas "GIF Brewery 3", id: 1081413713
 mas "Icon Set Creator", id: 939343785
-## mas "Keynote", id: 409183694
+mas "Interact", id: 1528095640
 mas "Loremify", id: 1028877632
 mas "Magnet", id: 441258766
-## mas "Numbers", id: 409203825
-## mas "Pages", id: 409201541
+mas "Muna", id: 1527875018
+mas "Playgrounds", id: 1496833156
+mas "Raindrop.io for Safari", id: 957810159
+mas "RocketSim", id: 1504940162
+mas "ScanCode", id: 1482517543
+mas "Schneller Klingeltonersteller", id: 1341568374
+mas "Session Pal", id: 1515213004
+mas "ShaderMania", id: 1541065830
 mas "Slack", id: 803453959
+mas "Tab Suspender", id: 1495356253
 mas "The Unarchiver", id: 425424353
-mas "Wire", id: 931134707
-## mas "Wunderlist", id: 410628904
-## mas "Xcode", id: 497799835
+mas "Tot", id: 1491071483
+mas "Xcode", id: 497799835
